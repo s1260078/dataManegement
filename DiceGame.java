@@ -44,8 +44,8 @@ class DiceGame{
 	System.out.println("Die2: "+die2.getFaceValue());
 	total=die1.getFaceValue()+die2.getFaceValue();
 	System.out.println("Total value: "+total);
-	if(total>7)System.out.println("You won.");
-	else System.out.println("You lost.");
+	if(total>7)System.out.println(player.getName()+" won.");
+	else System.out.println(player.getName()+" lost.");
     }
     
     public static void main(String[] args){
