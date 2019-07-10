@@ -21,6 +21,11 @@ class Player{
     public String getName(){
 	return name;
     }
+    public void greeting(){
+	System.out.println("What is your name?");
+	System.out.println("> "+name);
+	System.out.println("Hello, "+name+"!");
+    }
 }
 
 
@@ -31,6 +36,7 @@ class DiceGame{
 	Die die1 = new Die();
 	Die die2 = new Die();
 	int total;
+	player.greeting();
 	System.out.println("Rolling the dice...");	
 	die1.roll();
 	die2.roll();
